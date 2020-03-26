@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>jsTask></title>
+<link rel="stylesheet" href="style.css" type="text/css"/>
+<script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+
+<h1> JavaScript task</h1>
+
+<p id="Name1"></p>
+<p id="Course"></p>
+<p id="NumberType"></p>
+<p id="demo"></p>
+
+<script>
+var Name = "Adeyeye Olusegun Timilehin";
+var Courses =[ "HTML", "CSS", "JavaScript", "Python", "Git"];
+var i;
+var Numbers=0;
+
+printName();
+
+function printName() {
+document.getElementById("Name1").innerHTML= "Name: " + Name;
+document.getElementById("Course").innerHTML= "Courses: " + Courses[0] + " , " + Courses[1] + " , " + Courses[2] + " , " + Courses[3] + " , " + Courses[4];
+}
+
+if (Courses.length % 2==1){
+document.getElementById("NumberType").innerHTML = "Odd Numbers";
+
+for (i = 1; i < 200; i+=2) {
+  Numbers += i + "<br>";
+  document.getElementById("demo").innerHTML = Numbers;
+}
+}
+
+else
+{
+document.getElementById("NumberType").innerHTML = "Even Numbers";
+for (var i=0; i<=200; i+=2) 
+{
+Numbers += i + "<br>";
+document.getElementById("demo").innerHTML = Numbers;
+}
+}
+</script>
+
+
+</body>
+</html>
